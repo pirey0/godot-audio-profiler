@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://jtvxmv0k3krh"]
+
+[ext_resource type="Script" uid="uid://cxs76echs0gn5" path="res://test.gd" id="1_ig7tw"]
+[ext_resource type="AudioStream" uid="uid://cc60ra834joq7" path="res://sfx_test.wav" id="2_0xm2m"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_ig7tw")
+
+[node name="test1D" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_0xm2m")
+volume_db = -2.629
+pitch_scale = 0.49
+autoplay = true
