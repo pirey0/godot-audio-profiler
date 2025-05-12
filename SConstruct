@@ -25,7 +25,7 @@ def copy_bin_dir(target, source, env):
     if os.path.exists(dst_dir):
         shutil.rmtree(dst_dir)
     shutil.copytree(src_dir, dst_dir)
-    print(f"Copied {src_dir} → {dst_dir}")
+    print(f"Copied {src_dir} -> {dst_dir}")
 
 env.AddPostAction(library, copy_bin_dir)
 
