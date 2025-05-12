@@ -9,5 +9,8 @@ reloadable = false
 windows.debug.x86_64 = "audio_profiler.windows.template_debug.x86_64.dll"
 windows.release.x86_64 = "audio_profiler.windows.template_release.x86_64.dll"
 
-macos.debug = "audio_profiler.macos.template_release.framework"
-macos.release = "audio_profiler.macos.template_release.framework"
+linux.debug.x86_64 = "libaudio_profiler.linux.template_debug.x86_64.so"
+linux.release.x86_64 = "libaudio_profiler.linux.template_release.x86_64.so"
+
+macos.debug = "libaudio_profiler.macos.template_debug.universal.dylib"
+macos.release = "libaudio_profiler.macos.template_release.universal.dylib"
