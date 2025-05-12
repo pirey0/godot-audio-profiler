@@ -188,6 +188,7 @@ void AudioProfilerDebuggerPlugin::refresh_display() {
 
 	dirty = false;
 	displayed_players.clear();
+	int playing = 0;
 
 	for (size_t i = 0; i < latest_data.size(); i++) {
 		Array element = latest_data[i];
@@ -198,6 +199,7 @@ void AudioProfilerDebuggerPlugin::refresh_display() {
 		info.playing = element[2];
 		info.type = element[3];
 		if (info.playing){
+			playing++;
 			info.stream_path = element[4];
 			info.self_volume_db = element[5];
 			info.mixed_volume_db = element[6];
@@ -225,7 +227,6 @@ void AudioProfilerDebuggerPlugin::refresh_display() {
 			to_update.resize(10);
 	}
 
-	int playing = 0;
 	String filter = search->get_text().strip_edges();
 	tree_item_to_id.clear();
 	HashSet<uint64_t> maintained_items;
