@@ -3,6 +3,11 @@ A Godot extension that adds a new "Audio" tab to the debugger.
 
 ![Screenshot 2025-05-12 205949](https://github.com/user-attachments/assets/27336d8d-5943-4721-a4c6-afd1f5a197a7)
 
+## How to install
+
+1. Download the latest [release](https://github.com/pirey0/godot-audio-profiler/releases)
+2. Unzip the content into your project's "addons" folder.
+
 ## What is it for?
 When implementing sounds and music in Godot it is often very hard and/or painful to debug and solve issues.
 This debugger keeps track of all playing AudioStreamPlayers and displays useful information about them to improve productivity when integrating or debugging sounds.
